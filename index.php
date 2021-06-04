@@ -152,7 +152,9 @@
             <div class="form-row">
             <div class="form-group col-md-6">
             <label for="stock">En stock</label>
-            <input type="text" class="form-control" id="stock">
+            <select type="text" class="form-control" id="stock">
+            <option>oui</option>
+            <option>non</option>
             </div>
             <div class="form-group col-md-4">
             <label for="tarif">Tarif</label>
@@ -165,7 +167,11 @@
             </div>
             <div class="form-group col-md-2">
             <label for="taille">Taille</label>
-            <input type="text" class="form-control" id="taille">
+            <select type="text" class="form-control" id="taille">
+            <option>S</option>
+            <option>M</option>
+            <option>XL</option>
+            <option>XXL</option>
             </div>
             <div class="form-group col-md-2">
             <label for="nouveaute">Nouveauté</label>
