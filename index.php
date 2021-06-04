@@ -49,7 +49,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Mugs Party</a>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -59,6 +59,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
                 <button type="button" id="toggle-sorting-bar" class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
@@ -147,23 +150,35 @@
             <!-- ton code html, php de la sorting-bar -->
             <form>
             <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="stock">En stock</label>
-      <input type="text" class="form-control" id="stock">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">Tarif</label>
-      <input type="number" id="tarif" class="form-control" min="0" max="60">
-      </input>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Couleur</label>
-      <input type="text" class="form-control" id="couleur">
-    </div>
-  </div>
-      
-        </div>
-        </form>
+            <div class="form-group col-md-6">
+            <label for="stock">En stock</label>
+            <input type="text" class="form-control" id="stock">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="tarif">Tarif</label>
+            <input type="number" id="tarif" class="form-control" min="0" max="60">
+            </input>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="couleur">Couleur</label>
+            <input type="text" class="form-control" id="couleur">
+            </div>
+            <div class="form-group col-md-2">
+            <label for="taille">Taille</label>
+            <input type="text" class="form-control" id="taille">
+            </div>
+            <div class="form-group col-md-2">
+            <label for="nouveaute">Nouveauté</label>
+            <input type="text" class="form-control" id="nouveaute">
+            </div>
+            <div class="form-group col-md-2">
+            <label for="tendance">Tendance</label>
+            <input type="text" class="form-control" id="tendance">
+            </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Trier</button>
+            </div>
+            </form>
 
         <?php
         /**
@@ -201,6 +216,11 @@
 
         <div class="container mt-40">
             <!-- ici ton code PHP pour afficher les mugs trouvés. -->
+            <?php
+
+            
+
+            ?>
         </div>
 
         <div class="spacer spacer-md"></div>

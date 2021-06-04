@@ -2544,6 +2544,7 @@ textarea.form-control {
 
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
+
 }
 
 a.btn.disabled,
@@ -2553,8 +2554,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: green;
+  border-color: green;
 }
 
 .btn-primary:hover {
