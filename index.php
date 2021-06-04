@@ -40,6 +40,7 @@
         <link rel="stylesheet" href="css/bootstrap-v4.6.0.css">
         <link rel="stylesheet" href="css/font-awesome-4.7.0.css">
         <link rel="stylesheet" href="css/custom.css">
+        <title>Mugs Party</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -48,6 +49,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
+            <a class="navbar-brand" href="#">Navbar</a>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -80,6 +82,27 @@
                 </div>
             </div>
         </div>
+
+
+    <table>
+        <tr>
+        <th>Couleur Mugs</th>
+        </tr>
+        <tr>
+        <td>Noir</td>
+        <tr>
+        <td>Blanc</td>
+        <tr>
+        <td>Violet</td>
+        <tr>
+        <td>Marron</td>
+        <tr>
+        <td>Rose</td>
+        <tr>
+        <td>Vert</td>
+        <tr>
+        <td>Jaune</td>
+        </table>
 
         <?php
         /**
@@ -118,9 +141,29 @@
          */
         ?>
 
+        
+
         <div id="sorting-bar" class="container-fluid sorting-bar">
             <!-- ton code html, php de la sorting-bar -->
+            <form>
+            <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="stock">En stock</label>
+      <input type="text" class="form-control" id="stock">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Tarif</label>
+      <input type="number" id="tarif" class="form-control" min="0" max="60">
+      </input>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Couleur</label>
+      <input type="text" class="form-control" id="couleur">
+    </div>
+  </div>
+      
         </div>
+        </form>
 
         <?php
         /**
@@ -165,7 +208,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-6 footer-box">
-                        <p style="padding-right:80px;"><h4>.</h4>On y trouve de tout et surtout du n'importe quoi !!</p>
+                        <p style="padding-right:80px;"><h4>Mugs Party</h4>On y trouve de tout et surtout du n'importe quoi !!</p>
                         <h3 class="footer-heading">Nous suivre</h3>
                         <ul class="social-icons">
                             <li><a href="#" target="_blank"><i class="rounded-circle fa fa-google"></i></a></li>
@@ -175,7 +218,7 @@
                         </ul>
                         <h3 class="footer-heading">Contact</h3>
                         <ul class="contact-info">
-                            <li><span class="icon fa fa-home"></span>, 67000 Strasbourg</li>
+                            <li><span class="icon fa fa-home"></span>Mugs Party, 67000 Strasbourg</li>
                             <li><span class="icon fa fa-phone"></span>03.99.98.97.96</li>
                             <li><span class="icon fa fa-envelope"></span>contact@mugsparty.fr</li>
                         </ul>
@@ -226,7 +269,7 @@
                     </div>
                     <div class="col-md-12 footer-box">
                         <div class="copyright">
-                        <p>&copy; 2021. Tous droits réservés.</p>
+                        <p>&copy; Mugs Party 2021. Tous droits réservés.</p>
                         </div>
                     </div>
                 </div>
